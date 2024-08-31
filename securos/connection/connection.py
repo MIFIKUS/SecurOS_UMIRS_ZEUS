@@ -1,7 +1,10 @@
 from securos.connection.connection_info import SecurOsConnectionInfo
+from pathlib import Path
 import ctypes
 
-libiidk = ctypes.CDLL('libiidk.so')
+current_path = Path.cwd()
+print("Текущий путь:", current_path)
+libiidk = ctypes.CDLL(f'{current_path}/libiidk.so')
 
 
 class SecurOsConnection:
