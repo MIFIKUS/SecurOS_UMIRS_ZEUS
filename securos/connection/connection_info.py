@@ -2,7 +2,7 @@ from securos.receiver.connection_callback import receive_msg
 import enum
 
 
-class SecurOsConnectionInfo(enum):
+class SecurOsConnectionInfo():
     ip = '127.0.0.1'
     port = '960'
     interface_id = '1'
